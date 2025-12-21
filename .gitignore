@@ -4,7 +4,7 @@ venv/
 ENV/
 
 # Data
-data/
+data/processed/
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/

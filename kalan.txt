@@ -1,0 +1,2 @@
+reports kismi duzenlenecek
+radme duzenlenecek (raw data ya datanin koyulmasi lazim)
