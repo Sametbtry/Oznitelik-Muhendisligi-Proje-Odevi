@@ -72,7 +72,7 @@ German Credit Risk - With Target/
 │
 ├── .gitignore                        # Git ignore dosyası
 ├── requirements.txt                  # Gerekli Python kütüphaneleri
-└── README.md                         # Bu dosya
+└── README.md                         
 ```
 
 ## 🚀 Kurulum ve Çalıştırma
