@@ -13,6 +13,29 @@ Proje, veri ön işlemeden model karşılaştırmasına kadar tüm makine öğre
 - Seçilen özniteliklerle eğitilen modellerin performanslarının değerlendirilmesi
 - Öznitelik mühendisliğinin model performansına etkisinin analiz edilmesi
 
+## 🔗 Veri Kaynağı
+
+**Kaggle Dataset:** [German Credit Data with Risk](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk/)
+
+## 📊 Veri Seti Hakkında
+
+**German Credit Data** veri seti, kredi başvurularının risk durumunu tahmin etmek için kullanılır. 
+
+- **Toplam Kayıt:** 1000 gözlem
+- **Öznitelik Sayısı:** 9 (+ 1 hedef değişken)
+- **Hedef Değişken:** Risk (Good/Bad)
+
+**Öznitelikler:**
+- Age (Yaş)
+- Sex (Cinsiyet)
+- Job (İş Durumu)
+- Housing (Konut Durumu)
+- Saving accounts (Tasarruf Hesabı)
+- Checking account (Çek Hesabı)
+- Credit amount (Kredi Miktarı)
+- Duration (Kredi Süresi - ay)
+- Purpose (Kredi Amacı)
+
 ## 📂 Proje Yapısı
 
 ```
@@ -226,45 +249,6 @@ Bu komut, `requirements.txt` dosyasında belirtilen tüm kütüphaneleri otomati
 ```
 
 ---
-
-## 📊 Veri Seti Hakkında
-
-**German Credit Data** veri seti, kredi başvurularının risk durumunu tahmin etmek için kullanılır. 
-
-- **Toplam Kayıt:** 1000 gözlem
-- **Öznitelik Sayısı:** 9 (+ 1 hedef değişken)
-- **Hedef Değişken:** Risk (Good/Bad)
-
-**Öznitelikler:**
-- Age (Yaş)
-- Sex (Cinsiyet)
-- Job (İş Durumu)
-- Housing (Konut Durumu)
-- Saving accounts (Tasarruf Hesabı)
-- Checking account (Çek Hesabı)
-- Credit amount (Kredi Miktarı)
-- Duration (Kredi Süresi - ay)
-- Purpose (Kredi Amacı)
-
-## 📈 Öznitelik Seçim Yöntemleri
-
-### 1. Filter Method (Filtre Yöntemi)
-- **Algoritma:** SelectKBest (f_classif)
-- **Mantık:** Her özniteliğin hedef değişkenle olan istatistiksel ilişkisini (F-testi) hesaplar
-- **Avantaj:** Hızlı ve model bağımsız
-- **Dezavantaj:** Öznitelikler arası etkileşimi göz ardı eder
-
-### 2. Wrapper Method (Sarmalama Yöntemi)
-- **Algoritma:** RFE (Recursive Feature Elimination)
-- **Mantık:** Model performansına göre iteratif olarak en az önemli öznitelikleri eler
-- **Avantaj:** Model performansını doğrudan optimize eder
-- **Dezavantaj:** Hesaplama maliyeti yüksek
-
-### 3. Embedded Method (Gömülü Yöntem)
-- **Algoritma:** Random Forest Feature Importance
-- **Mantık:** Model eğitimi sırasında öznitelik önem skorlarını hesaplar
-- **Avantaj:** Hem hızlı hem de model ile entegre
-- **Dezavantaj:** Belirli model türlerine özgü
 
 ## 📝 Notlar
 
