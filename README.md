@@ -49,7 +49,8 @@ German Credit Risk - With Target/
 │       ├── X_train.csv               # Eğitim verisi (öznitelikler)
 │       ├── X_test.csv                # Test verisi (öznitelikler)
 │       ├── y_train.csv               # Eğitim verisi (hedef değişken)
-│       └── y_test.csv                # Test verisi (hedef değişken)
+│       ├── y_test.csv                # Test verisi (hedef değişken)
+│       └── selected_features.pkl     # Seçilen öznitelikler (pickle)
 │
 ├── notebooks/                        # Jupyter Notebook dosyaları
 │   ├── EDA_and_Preprocessing.ipynb   # 1. Notebook: Veri analizi ve ön işleme
@@ -57,13 +58,19 @@ German Credit Risk - With Target/
 │   └── Model_Comparison.ipynb        # 3. Notebook: Model karşılaştırması
 │
 ├── models/                           # Eğitilmiş model dosyaları
+│   ├── base_model.pkl                # Baseline model (tüm öznitelikler)
+│   ├── filter_model.pkl              # Filter method modeli
+│   ├── rfe_model.pkl                 # RFE modeli
+│   └── embedded_model.pkl            # Embedded method modeli
 │
 ├── reports/                          # Raporlar ve görselleştirmeler
+│   ├── rapor.pdf                     # Proje raporu
 │   └── figures/                      # Grafikler ve şekiller
 │       ├── EDA_and_Preprocessing/
 │       ├── Feature_Selection/
 │       └── Model_Comparison/
 │
+├── .gitignore                        # Git ignore dosyası
 ├── requirements.txt                  # Gerekli Python kütüphaneleri
 └── README.md                         # Bu dosya
 ```
